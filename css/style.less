@@ -1,7 +1,7 @@
 @import url(reset.css);
-@import url(media.css);
 @import url(font-awesome.css);
 @import url(fonts.css);
+@import url(media.css);
 
 @colorBg: #ebebeb;
 @colorWhite: #fff;
@@ -36,8 +36,7 @@
 
 body {
   font-family: "RobotoRegular", sans-serif;
-  background-image: url(../img/bg.png);
-  background-repeat: repeat;
+  background: url(../img/bg.png) repeat;
   line-height: normal;
 }
 
@@ -48,11 +47,6 @@ body {
 }
 
 .sidebar {
-//  background-color: @colorContentBg;
-//  border-left: 1px solid @colorBorder;
-//  border-bottom: 1px solid @colorBorder;
-//  height: 470px;
-//  margin-top: 50px;
   height: 400px;
   overflow: hidden;
   .sidebar-img-block {
@@ -78,14 +72,12 @@ body {
     .sidebar-address-text {
       font-size: 13px;
       color: @colorSidebarText;
-      padding: 5px 0 10px 0;
-      padding-left: 0 !important;
+      padding: 5px 0 10px 0 0 !important;
     }  
   }
   .sidebar-address-block-sm {
     display: none;
     .sidebar-text-sm {
-      padding: 15px 17px;
       color: @colorSidebarText;
       padding: 5px 0 10px 0;
       font-size: 13px;
@@ -226,12 +218,12 @@ body {
       padding-left: 25px;
       padding-bottom: 20px;
     }
-    .events-link-list {
-      color: @colorOrange;
-      &:hover {
-        color: @colorOrangeHover;
-      }
-    }
+    //.events-link-list {
+    //  color: @colorOrange;
+    //  &:hover {
+    //    color: @colorOrangeHover;
+    //  }
+    //}
   }
   &:hover {
     box-shadow: @shadowHover;
@@ -240,7 +232,6 @@ body {
 }
 
 .block-announcement {
-  padding-right: 0 !important;
   margin: 40px 0;
   .announcement {
     background-color: @colorWhite;
@@ -263,6 +254,14 @@ body {
   }
 }
 
+.block-afisha {
+  padding-right: 0 !important;
+}
+
+.block-sections {
+  margin: 0 0 40px 0;
+}
+
 .btn-nav {
   .btn-left {
     float: left;
@@ -271,7 +270,6 @@ body {
   .btn-right {
     height: 37px;
     width: 37px;
-    border: none;
     background-color: @colorWhite;
     border: 1px solid @colorBorder;
     border-radius: 50%;
@@ -309,7 +307,7 @@ body {
     width: 90%;
     margin: 15px auto;
     .slick-slide {
-      margin: 0px 20px;
+      margin: 0 20px;
       outline: none;
     }
     .slick-slide img {
@@ -405,8 +403,7 @@ body {
 .section {
   background-color: @colorWhite;
   box-shadow: @shadow;
-  border-top: 2px solid @colorOrange;
-  height: 580px;
+  //height: 100%;
   overflow: hidden;
   .section-img {
     width: 100%;
@@ -424,20 +421,14 @@ body {
       line-height: 150%;
     }
   }
+  .section-link-block {
+    border-top: 1px solid @colorBorder;
+    .section-link {
+      padding: 10px 0 10px 15px;
+      display: block;
+    }
+  }
   
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 

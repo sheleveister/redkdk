@@ -1,11 +1,10 @@
 @import url(reset.css);
-@import url(media.css);
 @import url(font-awesome.css);
 @import url(fonts.css);
+@import url(media.css);
 body {
   font-family: "RobotoRegular", sans-serif;
-  background-image: url(../img/bg.png);
-  background-repeat: repeat;
+  background: url(../img/bg.png) repeat;
   line-height: normal;
 }
 .page-container {
@@ -39,14 +38,12 @@ body {
 .sidebar .sidebar-address-block .sidebar-address-text {
   font-size: 13px;
   color: #909295;
-  padding: 5px 0 10px 0;
-  padding-left: 0 !important;
+  padding: 5px 0 10px 0 0 !important;
 }
 .sidebar .sidebar-address-block-sm {
   display: none;
 }
 .sidebar .sidebar-address-block-sm .sidebar-text-sm {
-  padding: 15px 17px;
   color: #909295;
   padding: 5px 0 10px 0;
   font-size: 13px;
@@ -213,25 +210,12 @@ body {
   padding-left: 25px;
   padding-bottom: 20px;
 }
-.block-events .events .events-link-list,
-.block-contacts .events .events-link-list,
-.block-events .contacts .events-link-list,
-.block-contacts .contacts .events-link-list {
-  color: #f6735b;
-}
-.block-events .events .events-link-list:hover,
-.block-contacts .events .events-link-list:hover,
-.block-events .contacts .events-link-list:hover,
-.block-contacts .contacts .events-link-list:hover {
-  color: #f45a3e;
-}
 .block-events:hover,
 .block-contacts:hover {
   box-shadow: 0.5px 1px 8px rgba(0, 0, 0, 0.2);
   transition: all 0.4s ease-in-out;
 }
 .block-announcement {
-  padding-right: 0 !important;
   margin: 40px 0;
 }
 .block-announcement .announcement {
@@ -253,6 +237,12 @@ body {
   box-shadow: 0.5px 1px 8px rgba(0, 0, 0, 0.2);
   transition: all 0.4s ease-in-out;
 }
+.block-afisha {
+  padding-right: 0 !important;
+}
+.block-sections {
+  margin: 0 0 40px 0;
+}
 .btn-nav .btn-left {
   float: left;
 }
@@ -260,7 +250,6 @@ body {
 .btn-nav .btn-right {
   height: 37px;
   width: 37px;
-  border: none;
   background-color: #ffffff;
   border: 1px solid #d8d8d8;
   border-radius: 50%;
@@ -304,7 +293,7 @@ body {
   margin: 15px auto;
 }
 .achievements .slider .slick-slide {
-  margin: 0px 20px;
+  margin: 0 20px;
   outline: none;
 }
 .achievements .slider .slick-slide img {
@@ -388,8 +377,6 @@ body {
 .section {
   background-color: #ffffff;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
-  border-top: 2px solid #f6735b;
-  height: 580px;
   overflow: hidden;
 }
 .section .section-img {
@@ -407,4 +394,11 @@ body {
 }
 .section .section-list .section-list-links {
   line-height: 150%;
+}
+.section .section-link-block {
+  border-top: 1px solid #d8d8d8;
+}
+.section .section-link-block .section-link {
+  padding: 10px 0 10px 15px;
+  display: block;
 }

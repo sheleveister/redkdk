@@ -38,24 +38,12 @@
     display: none;
   }
   
-/*
-  .page-container .slider {
-    height: 340px;
-  }
-*/
-  
-/*
-  .page-container .menu-link {
-    padding: 25px 12.65px !important;
-  }
-*/
-  
   body .page-container .menu-row {
     width: 970px;
   }
   
   body .menu-row .menu-link {
-    padding: 17px 27.8px !important;
+    padding: 17px 36px !important;
   }
 
 }
@@ -104,18 +92,7 @@
     height: 340px;
     z-index: 3;
   }
-  
-/*
-  .page-container .menu-link {
-    padding: 25px 14px !important;
-  }
-*/
-  
-/*
-  .page-container .links {
-    height: 70px !important;
-  }
-*/
+
   
 }
 
