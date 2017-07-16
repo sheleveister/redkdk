@@ -72,7 +72,7 @@ body {
     .sidebar-address-text {
       font-size: 13px;
       color: @colorSidebarText;
-      padding: 5px 0 10px 0 0 !important;
+      padding: 5px 0 10px 0 !important;
     }  
   }
   .sidebar-address-block-sm {
@@ -176,7 +176,6 @@ body {
       .events-text {
         color: @colorGrayContent;
       }
-      
       .events-link {
         text-decoration: none;
         color: @colorWhite;
@@ -403,7 +402,6 @@ body {
 .section {
   background-color: @colorWhite;
   box-shadow: @shadow;
-  //height: 100%;
   overflow: hidden;
   .section-img {
     width: 100%;
@@ -428,7 +426,114 @@ body {
       display: block;
     }
   }
-  
 }
+
+.content-cinema {
+  background-color: @contentColor;
+  .row-cinema {
+    margin: 30px 0;
+    .block-cinema {
+      color: @colorGrayTitle;
+      font-size: 14px;
+      overflow: hidden;
+      .cinema-title {
+        text-transform: uppercase;
+        font-size: 16px;
+        font-family: "RobotoMedium", sans-serif;
+        padding: 15px 5px;
+      }
+      .cinema-film-link-active {
+        text-decoration: none;
+        color: @colorWhite;
+        padding: 3px 20px;
+        border-radius: 20px;
+        background-color: @colorOrange;
+        display: inline-block;
+        font-size: 12px;
+        text-transform: uppercase;
+        font-family: "RobotoMedium", sans-serif;
+        .fa-chevron-right {
+          padding-left: 7px;
+        }
+        &:hover {
+          background-color: @colorOrangeHover;
+          transition: @transition;
+        }
+      }
+      .cinema-film-link-disable {
+        background-color: @colorSidebarText;
+        &:hover {
+          background-color: @colorSidebarText;
+        }
+      }
+      .cinema-img {
+        width: 100%;
+        border-bottom: 1px solid @colorBorder;
+      }
+      .table-cinema {
+        margin: 0 0 15px 0;
+        td {
+          padding: 5px;
+        }
+        .lead {
+          font-family: "RobotoBold", sans-serif;
+        }
+      }
+      .cinema-text {
+        padding: 0 5px 20px 5px;
+      }
+    }
+  }
+}
+
+.content-afisha {
+  background-color: @contentColor;
+  padding: 40px 0;
+  .block-fest {
+    background-color: @colorWhite;
+    box-shadow: @shadow;
+    &:hover {
+      box-shadow: @shadowHover;
+      transition: @transition;
+    }
+    .block-afisha-fest {
+      border-bottom: 1px solid @colorBorder;
+      .afisha-title {
+        text-transform: uppercase;
+        font-size: 16px;
+        font-family: "RobotoMedium", sans-serif;
+        padding: 25px 15px 15px 0;
+        display: inline-block;
+      }
+      .afisha-data {
+        font-size: 14px;
+        color: @colorData;
+        display: inline-block;
+      }
+      .afisha-text {
+        padding-bottom: 25px;
+        .afisha-link {
+          text-decoration: none;
+          color: @colorWhite;
+          padding: 3px 20px;
+          border-radius: 20px;
+          background-color: @colorOrange;
+          display: inline-block;
+          font-size: 12px;
+          text-transform: uppercase;
+          font-family: "RobotoMedium", sans-serif;
+        }
+        .afisha-text-italic {
+          font-family: Arial, sans-serif;
+          font-style: italic;
+          padding: 15px 0;
+        }
+      }
+    }
+  }
+}
+
+
+
 
 
